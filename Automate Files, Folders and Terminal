@@ -1,0 +1,26 @@
+#reading files
+f = open('FILE NAME', 'r') #r to read
+f.close() #close file
+
+#write files
+f = open('FILE NAME', 'w') #w to write
+f.close() #close file
+
+#for the below example create a plain text input file to utilize as part of the read function.
+#if using Jupyter Notebook, upload file or change your directory to read from your PC.
+#note: since the file is uploaded to Jupyter Notebook, I can just call it rather than providing 
+#a system path. (see 'inputfile.txt', and not 'C:Path\Location\File\etc....')
+
+f = open('inputfile.txt','r') #open file
+passFile = open('passFile.txt','w') #'P' files #write
+failFile = open('failFile.txt','w') #'F' files #write
+for line in f:  #iterate
+    line_split = line.split() 
+    if line_split[2] == 'P':
+        passFile.write(line)
+    else:
+        failFile.write(line)
+f.close() #close file after reading it.
+passFile.close()
+failFile.close()
+
