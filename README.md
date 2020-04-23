@@ -2,7 +2,7 @@
 Several code samples for automating work with python. 
 
 # Table of content
-* Automate file, folder and terminal interactions
+* Automate files (read and write)
 * Organize directories
 * Webscraping w/beautifulSoup
 * Automating webscraping efforts w/selenium
